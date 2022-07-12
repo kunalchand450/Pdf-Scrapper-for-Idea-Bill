@@ -1,0 +1,25 @@
+This task divides into 2 parts 
+1. To extract unstructured data from pdf 
+2. Extract tables from pdf.
+
+For this, I used a pdf plumber for extracting text data and a tabula for table data.
+
+After extraction, the data is not that pleasant 
+So use the regex function to first clean the text data and prepare for further processing. 
+
+After extraction and preprocessing, data gives us 
+1. Name
+2. Address
+3. Invoice No
+4. Mobile No.
+
+Now the Extracted table from the tabula is not up to the mark.
+Using various classes and functions to make it looks better two tables are combined with each other and the tabula takes it in a single row.
+Apply several table operations to make them separate from each other with the help of the regex function.
+Clean the nan values 
+And appends the data 1 by 1 for making this program run.
+Testing on multiple files performs well.
+
+
+Pdf plumber and tabula help in the basic approach.
+And python function makes this program runnable.

@@ -1,0 +1,16 @@
+uses>
+the file BillProcessor can be imported or executed directly via cli
+the class BillProcessor inside it takes a file name and gives a json object(python dictionary) as an output
+-----------------------------------------------------------------------------------------------------------------------
+to use the file via cli
+<python_path> BillProcessor.py -p <path> -o <output-path>
+of which output path is optional, it's considered to be the same as path when not provided
+when the path is a directory all the files within are processed
+
+the output is same as the path with the extension .pdf removed and .json appended
+-----------------------------------------------------------------------------------------------------------------------
+to use it via import
+import BillProcessor
+
+my_bill_processor = BillProcessor(<file_path>)
+output(my_bill_processor.get_output_json())
